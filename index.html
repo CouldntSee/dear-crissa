@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>for crissa mae</title>
+  <meta name="description" content="a small letter, a few years late." />
+  <meta property="og:title" content="for crissa mae" />
+  <meta property="og:description" content="some things take years to say." />
+  <meta name="theme-color" content="#221e2a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%23d99e3a'/%3E%3Cg fill='none' stroke='%238f83a8' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M16 11V3M16 21v8M11 16H3M21 16h8'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Cormorant Garamond (emotional serif) · Karla (prose) · La Belle Aurore (margin notes) · IBM Plex Mono (diagrams only) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,400&family=La+Belle+Aurore&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="locked">
+
+  <!-- botanical shapes, reused -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <path id="sfP"  d="M110 52 C117 42 119 24 110 10 C101 24 103 42 110 52 Z" />
+      <path id="sfPi" d="M110 54 C115 47 116 33 110 24 C104 33 105 47 110 54 Z" />
+      <path id="bA"   d="M80 47 C84 42 85 33 80 27 C75 33 76 42 80 47 Z" />
+      <path id="bL"   d="M118 92 C114 82 113 68 118 56 C123 68 122 82 118 92 Z" />
+      <path id="mLp"  d="M40 44 C36 35 35 22 40 12 C45 22 44 35 40 44 Z" />
+
+      <symbol id="sym-sun" viewBox="0 0 220 300">
+        <g class="c-stem">
+          <path d="M110 92 C107 150 113 225 110 292" />
+          <path d="M110 205 C88 196 74 178 76 156 C94 166 106 184 110 205 Z" />
+          <path d="M110 232 C132 223 146 205 144 183 C126 193 114 211 110 232 Z" />
+        </g>
+        <g class="c-sun">
+          <use href="#sfP" transform="rotate(0 110 70)"/><use href="#sfP" transform="rotate(30 110 70)"/>
+          <use href="#sfP" transform="rotate(60 110 70)"/><use href="#sfP" transform="rotate(90 110 70)"/>
+          <use href="#sfP" transform="rotate(120 110 70)"/><use href="#sfP" transform="rotate(150 110 70)"/>
+          <use href="#sfP" transform="rotate(180 110 70)"/><use href="#sfP" transform="rotate(210 110 70)"/>
+          <use href="#sfP" transform="rotate(240 110 70)"/><use href="#sfP" transform="rotate(270 110 70)"/>
+          <use href="#sfP" transform="rotate(300 110 70)"/><use href="#sfP" transform="rotate(330 110 70)"/>
+          <use href="#sfPi" transform="rotate(15 110 70)"/><use href="#sfPi" transform="rotate(45 110 70)"/>
+          <use href="#sfPi" transform="rotate(75 110 70)"/><use href="#sfPi" transform="rotate(105 110 70)"/>
+          <use href="#sfPi" transform="rotate(135 110 70)"/><use href="#sfPi" transform="rotate(165 110 70)"/>
+          <use href="#sfPi" transform="rotate(195 110 70)"/><use href="#sfPi" transform="rotate(225 110 70)"/>
+          <use href="#sfPi" transform="rotate(255 110 70)"/><use href="#sfPi" transform="rotate(285 110 70)"/>
+          <use href="#sfPi" transform="rotate(315 110 70)"/><use href="#sfPi" transform="rotate(345 110 70)"/>
+          <circle cx="110" cy="70" r="19"/>
+          <circle cx="110" cy="70" r="11" stroke-dasharray="1.5 4"/>
+        </g>
+      </symbol>
+
+      <symbol id="sym-tulip" viewBox="0 0 140 240">
+        <g class="c-stem">
+          <path d="M70 96 C67 140 73 190 70 232" />
+          <path d="M70 168 C50 160 38 142 40 122 C56 132 66 150 70 168 Z" />
+          <path d="M70 192 C90 184 102 166 100 146 C84 156 74 172 70 192 Z" />
+        </g>
+        <g class="c-violet">
+          <path class="has-fill" d="M46 52 C46 80 56 98 70 98 C84 98 94 80 94 52 C88 62 81 64 75 54 C73 50 67 50 65 54 C59 64 52 62 46 52 Z" />
+          <path d="M70 96 C67 78 67 62 70 50" />
+        </g>
+      </symbol>
+
+      <symbol id="sym-lily" viewBox="0 0 120 170">
+        <g class="c-stem">
+          <path d="M60 92 C58 122 62 150 60 166" />
+          <path d="M60 132 C48 126 42 116 43 105 C52 111 58 120 60 132 Z" />
+        </g>
+        <g class="c-lav">
+          <use href="#lilP6" transform="rotate(0 60 52)"/><use href="#lilP6" transform="rotate(60 60 52)"/>
+          <use href="#lilP6" transform="rotate(120 60 52)"/><use href="#lilP6" transform="rotate(180 60 52)"/>
+          <use href="#lilP6" transform="rotate(240 60 52)"/><use href="#lilP6" transform="rotate(300 60 52)"/>
+          <path d="M60 52 C55 40 50 34 45 28" /><circle cx="44" cy="26" r="1.6" class="dot"/>
+          <path d="M60 52 C60 38 60 30 60 22" /><circle cx="60" cy="20" r="1.6" class="dot"/>
+          <path d="M60 52 C65 40 70 34 75 28" /><circle cx="76" cy="26" r="1.6" class="dot"/>
+        </g>
+      </symbol>
+      <path id="lilP6" d="M60 52 C53 40 52 22 60 8 C68 22 67 40 60 52 Z" />
+    </defs>
+  </svg>
+
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ══════════ the envelope ══════════ -->
+  <div id="opening" class="opening">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="open-inner">
+      <!-- ★ PERSONAL -->
+      <p class="open-hand" aria-hidden="true">for crissa mae</p>
+      <h1 class="open-title">Some things take <em>years</em> to say.</h1>
+      <button id="openBtn" class="open-word" type="button" autofocus>
+        <svg viewBox="0 0 140 64" aria-hidden="true" focusable="false">
+          <path pathLength="1" d="M16 33 C13 14 56 5 92 8 C124 11 135 29 119 45 C101 61 42 63 21 51 C9 44 11 37 17 31"/>
+        </svg>
+        <span>open</span>
+      </button>
+      <p class="open-hint hand">take your time.</p>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ══════════ the memory ══════════ -->
+    <section class="chapter" id="memory" aria-label="The memory">
+      <div class="wrap ch01-grid">
+        <div>
+          <div class="prose" data-reveal data-soft>
+            <!-- ★ PERSONAL -->
+            <p>We were kids. That's the whole beginning — classrooms, recess, afternoons that felt like they would never run out. You were part of all of it, and even then, I thought you were one of the most beautiful people I had ever seen.</p>
+            <p>I didn't have a word for what I felt back then. I was too young to understand it, and too scared to ask anyone what it was. So I just kept it. Quietly. The way kids keep important things.</p>
+          </div>
+          <p class="flower-note" data-reveal>
+            <svg class="f-ic" viewBox="0 0 220 300" aria-hidden="true" focusable="false"><use href="#sym-sun"/></svg>
+            <span>sunflower — for warmth.</span>
+          </p>
+        </div>
+
+        <div class="frame-wrap" data-reveal>
+          <figure class="polaroid" style="--rot:-1.6deg">
+            <div class="media pframe">
+              <img class="photo" src="assets/photos/crissa-01.jpg" loading="lazy" decoding="async"
+                   alt="A photograph of Crissa Mae from childhood."
+                   onerror="this.closest('.media').classList.add('missing')" />
+              <div class="ph" aria-hidden="true">
+                <svg viewBox="0 0 220 300" focusable="false"><use href="#sym-sun"/></svg>
+              </div>
+              <span class="tape t1" aria-hidden="true"></span>
+              <span class="tape t2" aria-hidden="true"></span>
+            </div>
+            <figcaption class="hand note-on-photo">i remember the light more than the details.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ the distance ══════════ -->
+    <section class="chapter" id="distance" aria-label="The distance">
+      <div class="wrap narrow">
+        <div class="prose" data-reveal data-soft>
+          <p>No goodbye. No falling out. Life just carried us in different directions, the way it does when you're young. Somewhere along the way, we stopped being part of each other's days.</p>
+          <p>I used to think that was simply something that happens. Now I think about it more like a signal — steady for a while, then noisy, then quiet.</p>
+        </div>
+
+        <div class="dist" data-reveal
+             role="img" aria-label="A drawn waveform that is steady, becomes noisy, then falls silent, ending in one small still-searching pulse.">
+          <svg class="dist-svg" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="distFade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0"    stop-color="#5c5270" stop-opacity="0"/>
+                <stop offset="0.06" stop-color="#5c5270" stop-opacity="1"/>
+                <stop offset="0.82" stop-color="#5c5270" stop-opacity="0.9"/>
+                <stop offset="1"    stop-color="#5c5270" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="75" x2="1200" y2="75" stroke="rgba(46,42,51,.14)" stroke-dasharray="2 7" vector-effect="non-scaling-stroke"/>
+            <path id="distPath" pathLength="1" fill="none" stroke="url(#distFade)" stroke-width="1.6"
+                  stroke-linecap="round" vector-effect="non-scaling-stroke" d=""/>
+          </svg>
+          <div class="dist-labels" aria-hidden="true">
+            <span class="mono" style="--at:12%">signal</span>
+            <span class="mono" style="--at:44%">noise</span>
+            <span class="mono" style="--at:72%">silence</span>
+          </div>
+          <span class="pulse" aria-hidden="true"></span>
+        </div>
+
+        <p class="dist-line" data-reveal>Some signals disappear.<br />Some are only waiting to be <em>received again</em>.</p>
+      </div>
+    </section>
+
+    <!-- ══════════ the reconnection ══════════ -->
+    <section class="chapter" id="reconnection" aria-label="The reconnection">
+      <div class="wrap narrow center-col">
+        <header data-reveal>
+          <h2 class="ch-title">First year of university.<br />And there <em>you</em> were.</h2>
+        </header>
+        <div class="prose" data-reveal data-soft>
+          <p>Years later, in a place I never expected to find you, I looked up — and you were there. Real. Older. And somehow exactly familiar.</p>
+          <p>And that feeling — the one I was sure I had outgrown years ago — came back. Quiet, but familiar. Like something that had been waiting the whole time.</p>
+        </div>
+
+        <div class="frame-wrap center" data-reveal>
+          <figure class="mat" style="--rot:1deg">
+            <div class="media pframe focus">
+              <img class="photo" src="assets/photos/crissa-02.jpg" loading="lazy" decoding="async"
+                   alt="A photograph of Crissa Mae from around my first year of university."
+                   onerror="this.closest('.media').classList.add('missing')" />
+              <div class="ph" aria-hidden="true">
+                <svg viewBox="0 0 120 170" focusable="false"><use href="#sym-lily"/></svg>
+              </div>
+            </div>
+            <figcaption class="hand note-on-photo">i thought i'd forgotten. i hadn't.</figcaption>
+          </figure>
+          <p class="flower-note">
+            <svg class="f-ic" viewBox="0 0 120 170" aria-hidden="true" focusable="false"><use href="#sym-lily"/></svg>
+            <span>lily — for memory.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ the what-if ══════════ -->
+    <section class="chapter tonal" id="whatif" aria-label="The what-if">
+      <div class="wrap center-col">
+
+        <h2 class="whatif-title" data-reveal>what if<span class="qmark">?</span></h2>
+
+        <div class="q" data-reveal data-threshold="0.3"><p>What if I had been braver?</p></div>
+        <div class="q" data-reveal data-threshold="0.3"><p>What if I had told you?</p></div>
+        <div class="q" data-reveal data-threshold="0.3"><p>What if we had gotten closer?</p></div>
+        <div class="q" data-reveal data-threshold="0.3"><p>What if there was something waiting for us?</p></div>
+
+        <p class="maybe-small" data-reveal>Maybe I'll never know.</p>
+
+        <div class="greatest-block">
+          <div class="tulip-side" data-reveal data-threshold="0.2" aria-hidden="true">
+            <svg class="tulip" viewBox="0 0 140 240" focusable="false">
+              <g class="stem-c">
+                <path class="dr" style="--i:0" pathLength="1" d="M70 96 C67 140 73 190 70 232"/>
+                <path class="dr" style="--i:1" pathLength="1" d="M70 168 C50 160 38 142 40 122 C56 132 66 150 70 168 Z"/>
+                <path class="dr" style="--i:2" pathLength="1" d="M70 192 C90 184 102 166 100 146 C84 156 74 172 70 192 Z"/>
+              </g>
+              <g class="head-c">
+                <path class="dr has-fill" style="--i:3" pathLength="1" d="M46 52 C46 80 56 98 70 98 C84 98 94 80 94 52 C88 62 81 64 75 54 C73 50 67 50 65 54 C59 64 52 62 46 52 Z"/>
+                <path class="dr" style="--i:4" pathLength="1" d="M70 96 C67 78 67 62 70 50"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="greatest-text" data-reveal data-threshold="0.3">
+            <p class="greatest-lead">Maybe that's why you became</p>
+            <p class="greatest">my <em class="gw">greatest what-if</em>.</p>
+            <svg class="squiggle" viewBox="0 0 300 14" aria-hidden="true" focusable="false">
+              <path pathLength="1" d="M3 9 C24 3 46 13 82 8 C114 4 138 12 172 7 C206 3 232 13 262 8 C276 6 288 9 297 7"/>
+            </svg>
+            <p class="tulip-note hand">a tulip — for something that never got the chance to bloom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ an engineer's diagram of the feeling ══════════ -->
+    <section class="chapter" id="interlude" aria-label="An engineer's diagram of the feeling">
+      <div class="wrap narrow center-col">
+        <header data-reveal>
+          <h2 class="ch-title">If I had to explain it,<br />I'd explain it like this.</h2>
+        </header>
+        <p class="hand aside" data-reveal>the engineer in me had to draw this out.</p>
+
+        <div class="scope-wrap" data-reveal data-threshold="0.25">
+          <div class="scope">
+            <canvas id="scopeCanvas" aria-label="A live waveform: noisy at first, then steady, then quiet — ending in a small lily."></canvas>
+            <div class="scope-flower" aria-hidden="true">
+              <svg viewBox="0 0 80 120" focusable="false">
+                <path class="dr" style="--i:0" pathLength="1" d="M40 118 C39 96 41 76 40 56"/>
+                <g class="lil-c">
+                  <use href="#mLp" transform="rotate(0 40 44)"/><use href="#mLp" transform="rotate(72 40 44)"/>
+                  <use href="#mLp" transform="rotate(144 40 44)"/><use href="#mLp" transform="rotate(216 40 44)"/>
+                  <use href="#mLp" transform="rotate(288 40 44)"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <ol class="chain" data-reveal data-soft>
+            <li><span class="k">input</span><span class="v">a childhood memory</span></li>
+            <li><span class="k">signal</span><span class="v">you</span></li>
+            <li><span class="k">noise</span><span class="v">time</span></li>
+            <li><span class="k">delay</span><span class="v">years</span></li>
+            <li><span class="k">receiver</span><span class="v">me</span></li>
+            <li><span class="k">output</span><span class="v">a feeling that never completely disappeared</span></li>
+          </ol>
+
+          <p class="fig hand">the only diagram i was ever nervous to draw.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ the letter ══════════ -->
+    <section class="chapter" id="letter" aria-label="The letter">
+      <div class="wrap narrow center-col">
+        <article class="letter-sheet" data-reveal>
+          <svg class="pressed" viewBox="0 0 140 240" aria-hidden="true" focusable="false"><use href="#sym-tulip"/></svg>
+
+          <!-- ★ PERSONAL — the letter itself -->
+          <p class="greet">Crissa Mae,</p>
+          <p>You were one of the most beautiful girls I knew when we were kids. Even then, I liked you — although back then I didn't really have the words for it, and even if I had, I don't think I was brave enough to say them out loud.</p>
+          <p>Years passed. We lost contact, the way people do when they're young and life quietly carries them somewhere else. I never planned to make a thing of it. But I also never really stopped noticing the space it left.</p>
+          <p>Then, during my first year of university, I saw you again. And that old feeling came back — quieter, older, but unmistakably the same one.</p>
+          <p>It made me wonder about everything that never happened. What if I had been braver? What if I had told you? What if we had been given the chance to become something more?</p>
+          <p>I know I'll never really know the answer. And I'm not asking for one. I think that's exactly what makes you special to me — you became my greatest what-if. Not because I regret the life I lived, but because somewhere in me there will always be a younger version of myself, still wondering what could have happened.</p>
+          <p>And now, at least, he finally gets to say it.</p>
+
+          <p class="write" data-reveal data-threshold="0.5"><span class="write-inner hand big">I liked you.</span></p>
+          <p class="letter-close">I think a part of me <em>always</em> did.</p>
+          <p class="sign hand">— your friend, from a long time ago</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══════════ your birthday ══════════ -->
+    <section class="chapter" id="birthday" aria-label="Birthday wishes">
+      <div class="sun-glow" aria-hidden="true"></div>
+      <div class="wrap narrow center-col">
+        <header data-reveal>
+          <h2 class="ch-title">Whatever happens to the what-if —<br /><em>I'm still glad you exist.</em></h2>
+        </header>
+        <p class="hand aside" data-reveal>this part isn't a question. just a wish.</p>
+        <div class="prose" data-reveal data-soft>
+          <p>You don't owe this letter a reply. It was already worth writing, just to finally have it said. Today is simply your day, and I didn't want to let it pass like all the other years I stayed quiet.</p>
+          <p>I hope the year ahead is kind to you — full of soft mornings, easy laughter, and good news that finds you early. You deserve a beautiful one.</p>
+        </div>
+
+        <div class="frame-wrap center now-wrap" data-reveal>
+          <figure class="print" style="--rot:.4deg">
+            <div class="media pframe">
+              <img class="photo" src="assets/photos/crissa-03.jpg" loading="lazy" decoding="async"
+                   alt="A recent photograph of Crissa Mae."
+                   onerror="this.closest('.media').classList.add('missing')" />
+              <div class="ph" aria-hidden="true">
+                <svg viewBox="0 0 140 240" focusable="false"><use href="#sym-tulip"/></svg>
+              </div>
+              <i class="pcorner pc-tl" aria-hidden="true"></i>
+              <i class="pcorner pc-tr" aria-hidden="true"></i>
+              <i class="pcorner pc-bl" aria-hidden="true"></i>
+              <i class="pcorner pc-br" aria-hidden="true"></i>
+            </div>
+            <figcaption class="hand note-on-photo">here, now.</figcaption>
+          </figure>
+        </div>
+
+        <h3 class="hb" data-reveal>Happy Birthday,<br /><em>Crissa Mae</em>.</h3>
+
+        <div class="sun-big" data-reveal data-threshold="0.3" aria-hidden="true">
+          <svg class="sunflower" viewBox="0 0 220 300" focusable="false">
+            <g class="stem-c">
+              <path class="dr" style="--i:0" pathLength="1" d="M110 92 C107 150 113 225 110 292"/>
+              <path class="dr" style="--i:1" pathLength="1" d="M110 205 C88 196 74 178 76 156 C94 166 106 184 110 205 Z"/>
+              <path class="dr" style="--i:2" pathLength="1" d="M110 232 C132 223 146 205 144 183 C126 193 114 211 110 232 Z"/>
+            </g>
+            <g class="sf-o">
+              <use href="#sfP"/><use href="#sfP" transform="rotate(30 110 70)"/><use href="#sfP" transform="rotate(60 110 70)"/>
+              <use href="#sfP" transform="rotate(90 110 70)"/><use href="#sfP" transform="rotate(120 110 70)"/><use href="#sfP" transform="rotate(150 110 70)"/>
+              <use href="#sfP" transform="rotate(180 110 70)"/><use href="#sfP" transform="rotate(210 110 70)"/><use href="#sfP" transform="rotate(240 110 70)"/>
+              <use href="#sfP" transform="rotate(270 110 70)"/><use href="#sfP" transform="rotate(300 110 70)"/><use href="#sfP" transform="rotate(330 110 70)"/>
+            </g>
+            <g class="sf-i">
+              <use href="#sfPi" transform="rotate(15 110 70)"/><use href="#sfPi" transform="rotate(45 110 70)"/><use href="#sfPi" transform="rotate(75 110 70)"/>
+              <use href="#sfPi" transform="rotate(105 110 70)"/><use href="#sfPi" transform="rotate(135 110 70)"/><use href="#sfPi" transform="rotate(165 110 70)"/>
+              <use href="#sfPi" transform="rotate(195 110 70)"/><use href="#sfPi" transform="rotate(225 110 70)"/><use href="#sfPi" transform="rotate(255 110 70)"/>
+              <use href="#sfPi" transform="rotate(285 110 70)"/><use href="#sfPi" transform="rotate(315 110 70)"/><use href="#sfPi" transform="rotate(345 110 70)"/>
+            </g>
+            <circle class="dr" style="--i:3" pathLength="1" cx="110" cy="70" r="19"/>
+            <circle class="seeds" cx="110" cy="70" r="11"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ the last page ══════════ -->
+    <section class="chapter final" id="final" aria-label="Closing">
+      <div class="wrap narrow center-col">
+        <p class="close-line" data-reveal>Some stories are meant to become memories.</p>
+        <p class="close-line" data-reveal>Some are meant to remain questions.</p>
+        <p class="close-line" data-reveal>I'm just glad I finally got to tell you mine.</p>
+
+        <p class="hb-final" data-reveal>Happy Birthday, <em>Crissa Mae</em>.</p>
+
+        <div class="bouquet-wrap" data-reveal data-threshold="0.3" aria-hidden="true">
+          <svg class="bouquet" viewBox="0 0 160 210" focusable="false">
+            <g class="stem-c">
+              <path class="dr" style="--i:0" pathLength="1" d="M80 205 C80 160 80 112 80 66"/>
+              <path class="dr" style="--i:1" pathLength="1" d="M80 205 C66 162 52 122 40 94"/>
+              <path class="dr" style="--i:2" pathLength="1" d="M80 205 C94 164 106 128 118 100"/>
+              <path class="dr" style="--i:3" pathLength="1" d="M80 162 C68 156 62 146 63 135 C72 141 78 150 80 162 Z"/>
+            </g>
+            <g class="sunhead">
+              <use href="#bA"/><use href="#bA" transform="rotate(45 80 54)"/><use href="#bA" transform="rotate(90 80 54)"/>
+              <use href="#bA" transform="rotate(135 80 54)"/><use href="#bA" transform="rotate(180 80 54)"/><use href="#bA" transform="rotate(225 80 54)"/>
+              <use href="#bA" transform="rotate(270 80 54)"/><use href="#bA" transform="rotate(315 80 54)"/>
+              <circle class="dr" style="--i:4" pathLength="1" cx="80" cy="54" r="8.5"/>
+            </g>
+            <g class="tulhead">
+              <path class="dr has-fill" style="--i:5" pathLength="1" d="M30 74 C30 86 34 96 40 96 C46 96 50 86 50 74 C47 79 44 80 41 76 C40.6 74.8 39.4 74.8 39 76 C36 80 33 79 30 74 Z"/>
+              <path class="dr" style="--i:6" pathLength="1" d="M40 95 C38 87 38 81 40 76"/>
+            </g>
+            <g class="lilhead">
+              <use href="#bL"/><use href="#bL" transform="rotate(72 118 92)"/><use href="#bL" transform="rotate(144 118 92)"/>
+              <use href="#bL" transform="rotate(216 118 92)"/><use href="#bL" transform="rotate(288 118 92)"/>
+            </g>
+            <g class="ribbon-c">
+              <path class="dr" style="--i:7" pathLength="1" d="M80 196 C74 190 66 190 64 196 C66 201 74 201 80 196"/>
+              <path class="dr" style="--i:8" pathLength="1" d="M80 196 C86 190 94 190 96 196 C94 201 86 201 80 196"/>
+              <circle cx="80" cy="197" r="1.8" fill="currentColor" stroke="none"/>
+            </g>
+          </svg>
+          <p class="hand bouquet-note">one of each — warmth, possibility, and memory.</p>
+        </div>
+
+        <p class="hand final-hand" data-reveal>you don't have to answer any of this. it was already worth saying.</p>
+      </div>
+
+      <footer class="site-foot">
+        <p class="hand">built with a little too much nostalgia &amp; a little bit of Wishing I Said things</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- optional music box — generated in-browser, never autoplays -->
+  <button id="musicBtn" class="music" type="button" hidden aria-pressed="false" aria-label="Play a little music box" title="a little music box — optional">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M8.5 6.2 18 4v3l-9.5 2.2z" fill="currentColor"/>
+      <path d="M8.5 6.2V17.2M18 4v11.4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <ellipse cx="6.6" cy="17.4" rx="2.6" ry="2" fill="currentColor" transform="rotate(-14 6.6 17.4)"/>
+      <ellipse cx="16.1" cy="15.6" rx="2.6" ry="2" fill="currentColor" transform="rotate(-14 16.1 15.6)"/>
+      <path class="waves" d="M20.5 8.5c1.6 1.8 1.6 4.7 0 6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <noscript><style>#opening{display:none!important}body{overflow:auto!important}</style></noscript>
+  <script src="script.js" defer></script>
+</body>
+</html>
