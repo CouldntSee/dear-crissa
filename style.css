@@ -537,6 +537,12 @@ html.js .write.is-in .write-inner {
   .music { right: .8rem; bottom: .8rem; }
   .dist-labels .mono { font-size: .56rem; }
 }
+@media (max-width: 520px) {
+  .chain { grid-template-columns: 1fr; }
+  .q { min-height: min(46vh, 22rem); }
+  .music { right: .8rem; bottom: .8rem; }
+  .dist-labels .mono { font-size: .56rem; }
+}
 
 /* ————— reduced motion: everything readable, nothing moves ————— */
 
